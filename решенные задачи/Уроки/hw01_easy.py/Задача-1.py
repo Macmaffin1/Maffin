@@ -7,3 +7,15 @@
 __author__ = 'Мельник Виктория'
 a = list(str(input('Введите число ')))
 print(a)
+# вариант 2
+
+s = input('Введите целое число ')
+i = len(s)
+out = ''
+while i > 0:
+    if i == 1:
+        out += s[i - 1]
+    else:
+        out += s[i - 1] + ' '
+    i -= 1
+print('Результат –', out)
